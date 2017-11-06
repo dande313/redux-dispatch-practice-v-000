@@ -18,7 +18,7 @@ export function dispatch(action){
 }
 
 export function render(){
-  let petList = state.pets.map((pet) = > {
+  let petList = state.pets.map((pet) => {
     return `<li>${pet.name}</li>`
   })
   document.getElementById('container').innerHTML = `<ul>${petList}</ul>`
